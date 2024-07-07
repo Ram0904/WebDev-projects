@@ -1,0 +1,469 @@
+/* **********  Aside  ******** */
+
+aside{
+    width:350px;
+    height:85vh;
+    color:var(--font-pure-color);
+}
+aside .similarArtists{
+    width:100%;
+    height:50%;
+    margin-top:1rem;
+}
+aside .similarArtistsHeader{
+    width:90%;
+    height:20%;
+    margin-top:2rem;
+}
+aside .similarArtistsHeader .header{
+    font-size:1.5rem;
+    font-family:gothamBold;
+}
+aside .similarArtistsHeader .list p{
+    font-size:.8rem;
+    cursor:pointer;
+}
+aside .similarArtists .similarSongs{
+    width:90%;
+    height:70px;
+    position:relative;
+    margin-top:0.5rem;
+}
+aside .similarArtists .similarSongs .image{
+    width:70px;
+    height:70px;
+    
+}
+aside .similarArtists .similarSongs .image img{
+    width:100%;
+    height:100%;
+    border-radius:3px;
+    cursor: pointer;
+}
+aside .similarArtists .similarSongs p{
+    font-family:gothamBold;
+    color:var(--font-pure-color);
+    font-size:0.8rem;
+    padding:0 0.7rem 0.5rem 0.7rem;
+    cursor: pointer;
+    font-weight:100;
+}
+aside .similarArtists .similarSongs .albumNameSimilarSong{
+    color:var(--font-pure-soft);
+    font-size:0.7rem;
+    padding:0 0.7rem 0.5rem 0.7rem;
+    cursor: pointer;
+    font-weight:100;
+}
+aside .similarArtists .similarSongs h6{
+    padding-left:0.7rem;
+    color:var(--font-pure-soft);
+}
+aside .similarArtists .similarSongs .optionBar{
+    position:absolute;
+    top:0;
+    right:0;
+}
+aside .similarArtists .similarSongs .optionBar i{
+    color:var(--font-pure-soft);
+    cursor:pointer;
+}
+aside .similarArtists .similarSongs .optionBar .duration{
+    padding:0.5rem 0 0 0 ;
+}
+aside .recentlyPlayed{
+    height:50%;
+    width:100%;
+}
+aside .asideHeader{
+    width:90%;
+    height:60px;
+    margin-top:2rem;
+}
+aside .asideHeader .header{
+    font-size:1.5rem;
+    font-family:gothamBold;
+}
+aside .asideHeader .list p{
+    font-size:.8rem;
+    cursor:pointer;
+}
+aside .songs{
+    width:90%;
+    height:auto;
+    margin-top:2rem;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+aside .songs::-webkit-scrollbar {
+    display: none;
+}
+aside .songs .song{
+    width:95%;
+    height:70px;
+    margin:0.5rem;
+    color:var(--font-pure-soft);
+    transition:all .3s ease-in-out;
+}
+aside .songs .song:hover{
+    background:var(--background-tiles-hover);
+}
+aside .songs .song .left{
+    width:210px;
+    height:100%;
+    font-family:gothamBold;
+}
+aside .songs .song .left .songNumber{
+    font-size:0.8rem;
+}
+aside .songs .song .left .img img{
+    width:50px;
+    height:50px;
+    border-radius:5px;
+    cursor:pointer;
+}
+aside .songs .song .left .details{
+    width:110px;
+    font-size:0.75rem;
+
+}
+aside .songs .song .left .details .upper{
+    color:var(--font-pure-color);
+    width:100%;
+    padding:0.2rem;
+    cursor: pointer;
+}
+aside .songs .song .left .details .lower{
+    width:100%;
+    font-family:gothamBold;
+    font-size:0.7rem;
+}
+aside .songs .song .right{
+    width:30px;
+    height:100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+
+/* Media Max-Width 1200px */
+@media screen and (max-width:1200px){
+
+    aside{
+        width:300px;
+        height:85vh;
+        color:var(--font-pure-color);
+    }
+    aside .similarArtists{
+        width:100%;
+        height:50%;
+        margin-top:1rem;
+    }
+    aside .similarArtistsHeader{
+        width:90%;
+        height:20%;
+        margin-top:2rem;
+    }
+    aside .similarArtistsHeader .header{
+        font-size:1.3rem;
+        font-family:gothamBold;
+    }
+    aside .similarArtistsHeader .list p{
+        font-size:.6rem;
+        cursor:pointer;
+    }
+    aside .similarArtists .similarSongs{
+        width:90%;
+        height:70px;
+        position:relative;
+        margin-top:0.5rem;
+    }
+    aside .similarArtists .similarSongs .image{
+        width:60px;
+        height:60px;
+        
+    }
+    aside .similarArtists .similarSongs .image img{
+        width:100%;
+        height:100%;
+        border-radius:3px;
+        cursor: pointer;
+    }
+
+    aside .similarArtists .similarSongs p{
+        font-family:gothamBold;
+        color:var(--font-pure-color);
+        font-size:0.65rem;
+        padding:0 0.7rem 0.5rem 0.7rem;
+        cursor: pointer;
+        font-weight:100;
+    }
+    aside .similarArtists .similarSongs .albumNameSimilarSong{
+        color:var(--font-pure-soft);
+        font-size:0.55rem;
+        padding:0 0.7rem 0.5rem 0.7rem;
+        cursor: pointer;
+        font-weight:100;
+    }
+    aside .similarArtists .similarSongs h6{
+        padding-left:0.7rem;
+        color:var(--font-pure-soft);
+    }
+
+    aside .similarArtists .similarSongs .optionBar{
+        position:absolute;
+        top:0;
+        right:0;
+    }
+    aside .similarArtists .similarSongs .optionBar i{
+        color:var(--font-pure-soft);
+        cursor:pointer;
+    }
+    aside .similarArtists .similarSongs .optionBar .duration{
+        padding:0.5rem 0 0 0 ;
+    }
+    aside .recentlyPlayed{
+        height:50%;
+        width:100%;
+    }
+    aside .asideHeader{
+        width:90%;
+        height:60px;
+        margin-top:2rem;
+    }
+    aside .asideHeader .header{
+        font-size:1.3rem;
+        font-family:gothamBold;
+    }
+    aside .asideHeader .list p{
+        font-size:.6rem;
+        cursor:pointer;
+    }
+    aside .songs{
+        width:90%;
+        height:auto;
+        margin-top:2rem;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    aside .songs::-webkit-scrollbar {
+        display: none;
+    }
+    aside .songs .song{
+        width:95%;
+        height:70px;
+        margin:0.5rem;
+        color:var(--font-pure-soft);
+    }
+
+    aside .songs .song .left{
+        width:190px;
+        height:100%;
+        font-family:gothamBold;
+    }
+    aside .songs .song .left .songNumber{
+        font-size:0.7rem;
+    }
+    aside .songs .song .left .img img{
+        width:40px;
+        height:40px;
+        border-radius:5px;
+        cursor:pointer;
+    }
+    aside .songs .song .left .details{
+        width:110px;
+        font-size:0.75rem;
+    }
+    aside .songs .song .left .details .upper{
+        color:var(--font-pure-color);
+        width:100%;
+        padding:0.2rem;
+        cursor: pointer;
+        font-size:0.7rem;
+    }
+    aside .songs .song .left .details .lower{
+        width:100%;
+        font-family:gothamBold;
+        font-size:0.6rem;
+    }
+    aside .songs .song .right{
+        width:30px;
+        height:100%;
+    }
+
+}
+
+
+/* Media Max-Width 890px */
+@media screen and (max-width:890px){
+
+    aside{
+        width:550px;
+        height:600px;
+        color:var(--font-pure-color);
+        margin-bottom: 150px;
+    }
+    aside .similarArtists{
+        width:100%;
+        height:50%;
+    }
+    aside .similarArtistsHeader{
+        width:90%;
+        height:20%;
+    }
+    aside .similarArtistsHeader .header{
+        font-size:1.5rem;
+        font-family:gothamBold;
+        margin-bottom:1rem;
+    }
+    aside .similarArtistsHeader .list p{
+        font-size:.7rem;
+        cursor:pointer;
+    }
+    aside .similarArtists .similarSongs{
+        width:90%;
+        height:70px;
+        position:relative;
+        margin-top:0.5rem;
+    }
+    aside .similarArtists .similarSongs .image{
+        width:70px;
+        height:70px;
+        
+    }
+    aside .similarArtists .similarSongs .image img{
+        width:100%;
+        height:100%;
+        border-radius:3px;
+        cursor: pointer;
+    }
+
+    aside .similarArtists .similarSongs p{
+        font-family:gothamBold;
+        color:var(--font-pure-color);
+        font-size:0.8rem;
+        padding:0 0.7rem 0.5rem 0.7rem;
+        cursor: pointer;
+        font-weight:100;
+    }
+    aside .similarArtists .similarSongs .albumNameSimilarSong{
+        color:var(--font-pure-soft);
+        font-size:0.65rem;
+        padding:0 0.7rem 0.5rem 0.7rem;
+        cursor: pointer;
+        font-weight:100;
+    }
+    aside .similarArtists .similarSongs h6{
+        padding-left:0.7rem;
+        color:var(--font-pure-soft);
+    }
+
+    aside .similarArtists .similarSongs .optionBar{
+        position:absolute;
+        top:0;
+        right:0;
+    }
+    aside .similarArtists .similarSongs .optionBar i{
+        color:var(--font-pure-soft);
+        cursor:pointer;
+    }
+    aside .similarArtists .similarSongs .optionBar .duration{
+        padding:0.5rem 0 0 0 ;
+    }
+    aside .recentlyPlayed{
+        height:60%;
+        width:100%;   
+    }
+    aside .asideHeader{
+        width:90%;
+        height:60px;
+        margin-top:2.5rem;
+    }
+    aside .asideHeader .header{
+        font-size:1.3rem;
+        font-family:gothamBold;
+    }
+    aside .asideHeader .list p{
+        font-size:.7rem;
+        cursor:pointer;
+    }
+    aside .songs{
+        width:90%;
+        height:auto;
+        margin-top:2rem;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    aside .songs::-webkit-scrollbar {
+        display: none;
+    }
+    aside .songs .song{
+        width:95%;
+        height:70px;
+        margin:0.5rem;
+        color:var(--font-pure-soft);
+    }
+    aside .songs .song .left{
+        width:190px;
+        height:100%;
+        font-family:gothamBold;
+    }
+    aside .songs .song .left .songNumber{
+        font-size:0.7rem;
+    }
+    aside .songs .song .left .img img{
+        width:50px;
+        height:50px;
+        border-radius:5px;
+        cursor:pointer;
+    }
+    aside .songs .song .left .details{
+        width:110px;
+        font-size:0.75rem;
+    }
+    aside .songs .song .left .details .upper{
+        color:var(--font-pure-color);
+        width:100%;
+        padding:0.2rem;
+        cursor: pointer;
+        font-size:0.7rem;
+    }
+    aside .songs .song .left .details .lower{
+        width:100%;
+        font-family:gothamBold;
+        font-size:0.6rem;
+    }
+    aside .songs .song .right{
+        width:30px;
+        height:100%;
+    }
+
+}
+
+/* Media Max-Width 600px */
+@media screen and (max-width:600px){
+
+    aside{
+        width:95%;
+        height:600px;
+        color:var(--font-pure-color);
+        margin-bottom: 200px;
+    }
+    aside .similarArtistsHeader .header{
+        font-size:1.1rem;
+        font-family:gothamBold;
+        margin-bottom:1rem;
+    }
+    aside .asideHeader .header{
+        font-size:1.1rem;
+        font-family:gothamBold;
+    }
+    aside .songs .song .right{
+        justify-content: end;
+    }
+}

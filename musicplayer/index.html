@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Cart</title>
+
+    <!-- Title Image -->
+    <link rel = "icon" href ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM8Lvh6oSzVo2H8nPxFkhOlBqiI_jS_B7oFw&s" type = "image/x-icon">
+    
+    <!-- Importing CSS Links -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/mainIndex.css">
+    <link rel="stylesheet" href="css/asideIndex.css">
+    <link rel="stylesheet" href="css/footerIndex.css">
+    
+    <!-- Importing Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    
+    <!-- *******   Container   ******* -->
+    <div class="container">
+        
+            <!-- *******   Header   ******* -->
+            <header class="tr">
+                <div class="header-left tr">
+                            <div class="left f j-sb al-c tr">
+                            <div class="logo tr"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="text tr f j-c al-fs">
+                                <span class="upper tr">Music</span>
+                                    <span class="lower tr">Cart</span>
+                            </div>
+                            </div>
+                            <div class="right tr"><p>Favourite</p></div>  
+                        </div>
+                        <div class="header-right f j-sb al-c tr">
+                            <div class="searchBar tr">
+                                <input type="text" placeholder="Search" >
+                                <i class="fa-solid fa-magnifying-glass search tr"></i>
+                                <i class="fa-solid fa-microphone mic tr"></i>
+                            </div>
+                            <div class="bell">
+                                <i class="fa-solid fa-bell tr"></i>
+                                    <div class="notification"></div>
+                        </div>
+                        <div class=" myimg tr">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlP7zzkqVyYsJ-GLk4Bwa0pHin7XtRReOyQg&s" alt="profilepic">
+                        </div>
+                        <div class="hamburgerIcon"><i class="fa-solid fa-bars-staggered"></i></div>
+                    </div>
+                </header>
+
+
+        <!-- *** Inner Container *** -->
+
+        <div class="container2 tr">
+
+            <!-- *******   Main   ******* -->
+            <main class="tr">
+
+                <!-- Recommended -->
+                <div class="recommended f j-sb al-c tr">
+                        <img src="data:image/jpeg;base64,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" alt="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4n71Po0dUemjvu_BwhZ_3PH-CjQI-fJ_LUw&s" alt="">
+                        <img src="https://i.scdn.co/image/ab67616d00001e020f49d1351fa4ba599a17f930" alt="">
+                    </div>
+                    
+                        <!-- Latest Release -->
+                    <div class="latestRelease tr f j-c al-c fd-c">
+                    <div class="playlistHeader tr f al-fe">Latest Release</div>
+                    <div class="content tr f fw-w al-c">
+                        <div class="contentSongs tr f j-sb">
+                        <div class="left tr f j-sb">
+                            <div class="image tr f al-c">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXLDfmI0F7a7J6_AfGBC_wWYe4lP4VPhGKFw&s" alt="">
+                            </div>
+                                    <div class="details tr f fd-c j-c">
+                                        <p class="upper tr">How You Like That</p>
+                                            <p class="lower tr">Aug 11, 2017</p>
+                                        </div>
+                            </div>
+                            <div class="right tr">
+                                <div class="content tr f fd-c jc-sa">
+                            <div class="dots tr f j-c al-c">
+                                    <span class="dot tr"></span>
+                                    <span class="dot tr"></span>
+                            <span class="dot tr"></span>
+                                </div>
+                                <div class="duration tr t-c">04 : 34</div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="contentSongs tr f j-sb" >
+                            <div class="left tr f j-sb">
+                                <div class="image tr f al-c">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXLDfmI0F7a7J6_AfGBC_wWYe4lP4VPhGKFw&s" alt=""><a href="#footer" class="tr"><i class="fa-solid fa-play fa-2x tr"></i></a>
+                            </div>
+                            <div class="details tr f fd-c j-c">
+                                <p class="upper tr">How You Like That</p>
+                                <p class="lower tr">Aug 11, 2017</p>
+                            </div>
+                        </div>
+                        <div class="right tr">
+                            <div class="content tr f fd-c jc-sa">
+                                <div class="dots tr f j-c al-c">
+                            <span class="dot tr"></span>
+                                <span class="dot tr"></span>
+                                <span class="dot tr"></span>
+                                <ul class="tr">
+                                    <li class="tr"><i class="fa-solid faplay tr"></i><a href="#" class="tr td-n">Play Now </a></li>
+                                    <li class="tr"><i class="fa-solid fa-plus tr"></i> <a href="#"class="tr td-n">Add To Queue </a></li>
+                                    <li class="tr"><i class="fa-solid fa-heart tr"></i> <a href="#"class="tr td-n">Add To Favourites </a></li>
+                                    <li class="tr"><i class="fa-solid fa-circle-info tr"></i>  <a href="#"class="tr td-n">Get Info</a></li>
+                        </ul>
+                            
+                                </div>
+                                
+                                <div class="duration tr t-c">04 : 34</div>
+                            </div>
+                    </div>
+                        </div>
+
+                        <div class="contentSongs tr f j-sb">
+                        <div class="left tr f j-sb">
+                            <div class="image tr f al-c">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXLDfmI0F7a7J6_AfGBC_wWYe4lP4VPhGKFw&s" alt="">
+                            </div>
+                            <div class="details tr f fd-c j-c">
+                                <p class="upper tr">How You Like That</p>
+                                <p class="lower tr">Aug 11, 2017</p>
+                            </div>
+                        </div>
+                <div class="right tr">
+                    <div class="content tr f fd-c jc-sa">
+                        <div class="dots tr f j-c al-c">
+                                <span class="dot tr"></span>
+                                <span class="dot tr"></span>
+                                <span class="dot tr"></span>
+                        </div>
+                        <div class="duration tr t-c">04 : 34</div>
+                    </div>
+                </div>
+                    </div>
+
+                    <div class="contentSongs tr f j-sb"> 
+                        <div class="left tr f j-sb">
+                            <div class="image tr f al-c">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXLDfmI0F7a7J6_AfGBC_wWYe4lP4VPhGKFw&s" alt="">
+                            </div>
+                        <div class="details tr f fd-c j-c">
+                                <p class="upper tr">How You Like That</p>
+                                <p class="lower tr">Aug 11, 2017</p>
+                            </div>
+                        </div>
+                        <div class="right tr">
+                            <div class="content tr f fd-c jc-c ">
+                                <div class="dots tr f j-c al-c">
+                                    <span class="dot tr"></span>
+                                    <span class="dot tr"></span>
+                                <span class="dot tr"></span>
+                                </div>
+                                <div class="duration tr t-c">04 : 34</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popular Artists -->
+            <div class="popularArtists tr">
+                <div class="playlistHeader tr f al-fe">Popular Artists</div>
+                <div class="playlistContent tr f fd-c al-c j-c">
+                    <div class="section tr f fw-w al-c j-sb">
+                        <div class="artist t-c tr">
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTKHf7YrxqP_9YGDgUduguvHETpfN2wibpew&s" alt=""></div>
+                        <div class="name tr">The Weeknd</div>
+                    </div>
+                    <div class="artist tr t-c">
+                        <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1awqKCS43c58SeSFuDqQFxamuZV-tWWSdsw&s" alt=""></div>
+                        <div class="name tr">Ariana</div>
+                    </div>          
+                        <div class="artist tr t-c">
+                            <div class="img link tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-lGVQ-nBFavfcIzF2gWlS97oHVfaJtZza1Q&s" alt=""><a href="Alan_walker_playlist.html" class="tr" target="_self"><i class="fa-solid fa-play fa-2x tr"></i></a></div>
+                            <div class="name tr">Alan Walker</div>
+                        </div>
+                        <div class="artist tr t-c">
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOJu-qfGK1zirMrzA1qEBf7Xzp4WdQQntUYA&s" alt=""></div>
+                            <div class="name tr">Dua Lipa</div>
+                    </div>
+                        <div class="artist tr t-c">
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP__LnrsN7nsL9mmh-sSU67uNZB0D9oRQW6A&s" alt=""></div>
+                            <div class="name tr">Drake</div>
+                        </div>
+                        <div class="artist tr t-c">
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-RI-N_HwyEXIzxVg7NWJTmVoFl6fMaNQ-kQ&s" alt=""></div>
+                            <div class="name tr">Taylor Swift</div>
+                        </div>
+                    </div>
+
+                    <!-- Using the same classes of section 1 in seciton 2 -->
+                <div class="section2 tr f fw-w al-c j-sa">
+                        <div class="artist tr t-c">
+                            <div class="img img1 over tr"><i class="fa-brands fa-spotify fa-7x tr" style="color:#21b7d8"></i><span class="tr">Beat's Special</span></div>
+                        </div>
+                        <div class="artist tr t-c">
+                            <div class="img img2 over tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpAnGIMJRCKtf6FMyEkF2RtO4fWw95cFXHFQ&s" alt=""><span class="tr">Chill</span></div>
+                        </div>
+                        <div class="artist tr t-c">
+                            <div class="img img3 over tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIDTk6Q-PwEcxb3OzW6YdL_uLuwww6js7ZZQ&s" alt=""><span class="tr">Love</span></div>
+                            </div>
+                        <div class="artist t-c tr">
+                            <div class="img img4 over tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHyb_e3H4h0J05geRtIkA6cUi7ekTqDpYi3Q&s" alt=""><span class="tr">Retro</span></div>
+                        </div>
+                        <div class="artist tr t-c">
+                            <div class="img img5 over tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcs4iVFVCzWfrvjIygt2WzdofmpsFBOzU4ow&s" alt=""><span class="tr">Pop</span></div>
+                        </div>
+                        <div class="artist tr t-c">
+                            <div class="img img6 over tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYrnJAoxjFad55T5hrduGZgdFy62TJyc8kGQ&s" alt="rock"><span class="tr">Workout</span></div>
+                        </div>
+                        <div class="artist tr t-c">
+                            <div class="img img7 over tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_zxxeKPias9YVGOsXzl1bztO5ThhusP5IqA&s" alt="workout"><span class="tr">Rock</span></div>
+                            </div>
+                        </div>
+
+                <!-- Using the same classes of section 1 in seciton 3 -->
+                <div class="section section3 tr ">   
+                    
+                    <div class="artist tr t-c">
+                        <div class="img img1 blur tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyxPlPYODaA1lGCk-dXcelDaza-Dh6hc39JQ&s" alt=""><span class="tr">Party</span></div>
+                    </div>
+                    <div class="artist tr t-c">
+                        <div class="img img2 blur tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Nukcfeaihm3LhPKqSfQiwxBSkmz3Y52oYA&s" alt=""><span class="tr">Electronic</span></div>
+                </div>
+                        <div class="artist t-c tr">
+                            <div class="img img3 blur tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrGmDmKIUvpUYiqL2Wmw_BN53UbcJ6Pph3YA&s" alt=""><span class="tr">Road Trip</span></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Latest English Songs -->
+            <div class="latestEnglish tr">
+                <div class="playlistHeader tr f al-fe">Latest English Songs</div>
+                <div class="content tr f fw-w j-sb al-c">
+                        <div class="songs tr">
+                            <div class="img"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSEhMVFRUWFRUVFRUXFxYVFxUVFRUXFxUVFRUYHSggGBolHRYVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQFysdHR8tLS0tLSstKy0rLS0tLS0tLS0uLS0tLS4tLS0tLS8wLS0vLi0tLS0tLisrLSsrLS0tK//AABEIARMAtwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAAECBAUHBgj/xABFEAACAQIEAwUFBgMFBQkAAAABAgADEQQSITEFQVEGEyJhcQcygZGhFEJSscHRI2LwFTOCkuFDU3KU8QgWFyQ0RKKywv/EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EACcRAAICAgIDAAEDBQAAAAAAAAABAhEDMRIhBBNBUXGhsRQyYZHR/9oADAMBAAIRAxEAPwDqeYKCSbAakkgCw6mRo4+k1ytVGsCTZlNgOZsdoHi9InD1lUXJpuAOpKkWnP8AslweolXDNUo06C0UqLXcHM2IzK1gwUcr8+k0nNp0kV4/j48mOUpSpr/h0c4qkch7xP4nuWYeP/h11kRjqGXOKtPLfLmzC2Y/dv18p4vs1wNqONZqrXw9DOMILE2NU5m0tcW8/KCodnG/tLRv/JGqcUF1t3xHu2tf3je+1pHslWjX+lwKTXPpK/1/x+p0LfSIrrJRCbHnDWj3ko4EQ6IgSWWPHtbaFjIlIN0hTImFhRWenHy+cIBA4qwRiWyi3vfh84WTQzL8ZBlmL2d4731Wrh3Ks1Ii1RWW1VCNGAHPrPQFI7CiqyyLLLLJBMkdioquIMyy6QLJHZLQFoMmFanBskdiogTGjlYoxHoAdLbyWUW2HyEgLTzva/FVMMv2mlWy5PepP/duoIuL/ca17GQao9OtMdB8hJZB0HyEq8M4nTrAGm6sbKTlN7XF5dEkoYrIhIURGIKI3jxWjsvnCx0MDHEfKY+g/wCsVjohGIk5G0LChgNNoJh5XB/raG+PnGyQsKKS4GkDmFJA3UKoOnnLIXyhO7kgIxUAZINklplg2WFioqskE9OXCsG6ykxNFB6cEyy46yuwlIhorskaEaKUQad5J6aupVlBU6EEXB9bxrQgvINERoUFpiyKqjyFvyh1MgnnCrJLRJY9owMcASWyhRERAyV4hjBtdYKvXVLE7Egel9Bf4/nCkSpxPCNVpNTBUZhY5hmFvSAFxtpBRcyvgMNUSmq1KmdgLFstr/D5S0Wt8oAJx0jRmbz8/hGU/wBXgFEheStBqf6uIQGFhQiJBlhZEmFioCRBsIdoNpVioqVFlaosu1JWqCUmQ0VWEUepFKINCxMNSHWRQWkxJZaEosYQCDsZNT1kloIFiJjZo94ih7x4reUkKflEBCNfSTcWg80BkpT4lw6nXAWqG0JIysyHa24O3l5CXJT4pjRQo1KzAkU0ZyF3IUXsIbBOnaANwWiWv4tafdmzn3LW+duf6yScIpoLJnACMmXObMpubG9zud54XAe0PFV1NWjhsPkBICviQKht5WEvca7f1qCYdjhAr1i4KVKlspUqAVZQQVObcxcEHuf5N9OAo1qT03CLdlYVSDmYAkHLbY7ctIbGcKDXPdk5amZQKlr+BRfXYeECw8+sxeEdrMVVrU6b4fDqrMFZlxKuwGuoS3iPlM7Cdv8AGV3qph8DTqd05Vj3xX7xCk3XnlMfFB7pfk9lh8MaXfZKTHO2fWoDmL+/a/ugXPylX+x1pgZKTHu6gemO+NyWAzFi3IW28jKnYvtgca9ajUo9zWonxqGzr7xXQ2GoIl7tRxqrhggo4Z67uSNLhVAtq5APWJ0tl43ObqL2Rr8OJBGR2FN+8pfxbXY3uPJRcmxhKnBKbKwbOO8YVHGdj4x0PLe2mmgnm07cYlKy0a+FQM+iinVzHMdFBHrbzk8Z2px9IZqmARQSAL1TueW39Wkc4nT/AE2dOr/dG/iuEUnsWDeFi4szDxHL9PCNPWDo4BKbOy5rubtcki+p06byhhOM4urSp1lwyWdSxXOwIswAAJHMEkHymlhqrst6iZGzMMt82gJAN/MazSLT0cuRZIqm/wByFQRR6kU0OYvgyYMEjiEVtomUgiuI7ESGbraTFvKSyySzO7S9oKOBoGvXJC3AUDUux2VR1mnT+E5T7f63/pKd9+9a3plF7RDejyXaj2qY3EFhRP2ekQVyrYuR1Z9wfSedw/abHO6fx6rMuiFnc2ud731+Mw2cE25X5es9+ex+IagmIw2R1KgrTXQnS1yx5g+cmUlEqEHI652N7TvWpiliBaugAqdW6VB1B6iemYTiHZ2pXR6ZavbEAMq4cjObHTNcb6i+W+2xncFBAF97a+tuUIu0OSoUr4ugXR0VyhZWAYWJUkb2Oh9DLGse3OUQcyfsBiyGVjgKma/8ZsOFqi/MZVABj472ZVTRw9JK6MaRqMxqKxUlypCqv4fCbjznSgTJR2LijwHAuxOIo4ilVdeH2R8x7vDZKlrEeBuRlPCez7D0qlV8fXS1Ri1IK5pWBZi172vus6VaZvGOBU8Tl7xqgyggBWABufvAqbwsOJV7O8JwOCL08OUDtq93DOQovrc3AA1lDtdw+rjlUYbF00pICaoDHUn3SxQ7Wvoes2F7P0hUNQF73ZrXGUO65GcC17kedvKQw/Zqiqst6jBmVjmbW6jTUAded5MlfTNMc3jlyj8PH8G7M18DbEfaML3S2Z3FEF3TmFqWuSdhaHwDVOJ4hncFcPTNivI8+6vzY6Fz/h6z1tbgNFkp03DOlO2VGY5SRsWA94jz08pdpUVRQqKFUbBQAB8pCh/o6X5Vq3/d/BArYWGg5AaadJXqSy8r1BNkcLKtQRR6kUogsJfpDJBpDKIikTAi1vHEIiyWUTpAzkP/AGgsEwOFrja1SlrsGNnHzAb5T3Pant5gsCGV6ytWG1JfGwJ/GAdB6zifbD2iVuIBqFS3cZgyqEUEFT4Tf3hz5xIulQHsVXpVb0DQptVWnUtVJPiQg5lZRoSATY+kv4rtOaCKlFioAIK8hfyhfZRTo97XBAuyE02P4TyHnpAdruB08xZbhjqdbgnyE5JySyUzshGXruOwPY3FqMdhXGtQ1lzMXbPcnZRtaxIt0n0gx1nz17H+KYGhimXE0VFW57nEsWbIdAVyk5VJv7wE+gmE6Yqjkk2xGNI3tGve0ogJGuekcGPABgTFcx4oAOIhGjwARkDJGQJgAN5XcQ7wDxksrPFJVI0omi2ghlEqriE/GvzEOlZfxL84DQUCc39tHayphaaYXDuUqVFL1GX3lp3y2B5EknXynTKBBO4nzd7UuJivxWuQbqmWiOlkUhrf4iflJK+HjNSTzN9TuSeZJ6ydNN/T8oke112NzrLT93mtTLEZdcw+9Y3+EYmanYXGCni6asbJUuhPQnVD/mA+ZnR+JYKjVRmzgVNRY7KALk+n/ScjwYI8S7qQR8Nf0mzxPHGqe9FRh4MrLrax1JHqTtObLi5SR3YMnGNGFjWCtZNLnMDz30PrpedN7De140VXD45C6CyrXX3kXbxr94DqNZy+qtzm6/ptBFdZvRyyfZ9f0MQtRBUpsGRgGVhqGB2IMnacN9ifap6df7BVcmlUBNEHXu6g1Kr5ML6bXWdzECSOXzj21jxoAMF849o9ooAMBaSjRQARMgZKRMBA2gnEMZAiNAVXWKGKRRio+YF4+n+6b/m6/wC8MnaZRtTf/nMR+8DxjgdfCOKeIpmmxFxexDDqpG8r0KWYgAXubCwudekKG5I3sH2tqg+BKq8rjF1tNtdel55nF1SzZybm9mJ567mErtkuOpGvpKtU2Y+pgTsc6tf4/SE2b+ukHh9SJKqdfjAHuguEqWDSVdvCLcyCfkZXpmwMsmme7vbYCI6I6BVGsLef0MjTqWDAqGzDnup6gwdfl5fUcoxP5QM57N72fsf7Twdjb+MPllN/1n1K1LWfH+DqlHVwbFWBU7ag3Bv6idw7Ge0nwJ9pYvTNg9W3ipObf3y8hf7w0PltFQrOokRo61A4DKQVIBBGoIOxBitADF43jcVRYVKVMVKQ99L/AMRrkAZPPXnNhWuASLEjUdPKSvIwAUaKNAB5ExExoCFGtHEkuojAGwikyIogOT+3Kh/CwtTpUdPgyZgP/iZzzslihSxmGqNstekT6ZwD9CZ1n2v4M1OH5h/sq1N/gQyH/wC84zhksfPl6zREGl234UKGKxFK1grtlHlmuPownlauvw0nRfak6mth6y2IrYemzkEEhrZWBHI+6Zzususl6Gtj4I6/A/tJVPej4NtfQWkAbsT5GHwb/uGG010oXp3vsctjpY2+syKZsQek7Pw/B4fB0lFJahquobvFw7V2YNr4GbRB8JlPIobOnHBy0cexlKwUm43Gtx+cC45Dyn0AmJRhlr0DUB1/jCnmHTwKPCJzft1g6CsXoKiAeF0Gmp90qPneTjzKToebA4rkeFAM1OGGtTT7RTVlRW7s1LZkzML93VHQg89NeszGed39ivZ5xw+scQimlinDojAHMgXLdh0NtJqcxg9g+25w11AJob1MNfM+H61KBOr0eq7rOy8Px9KugqUnV1YXBBuCJxLt57PKmBb7Vgyxor4rLfvMOeZH4qe/oNDpKPY3tTUpVc9Kwcjx0BolYbmrQHJ+qc9wdCIwPoK0iZldne0VLF0w6HW2o5qdteo85sEQAGZEmSMg0QDExoxiEYBFlfC4eojuS4ZGNwuWxU89b6wwMleADsYpEmKIDyXtDxKJgKiuL94VpgfzXzX+AUzkHDKIIZ7C9zYW0Fp1j2nYJqmCDIrMadVXIAucuVlJt/iB+E5Pgq1lK35n5GaIg87jkyvVW972b9fyJlQi49Jo8UwjGqCgZs4N7Am1hre3KZQ1VfMn5iS90VtWQoNY+ukNTQ2ZvI2jUqQzDNt+s1UCijWPeKNEQU7XZ8xJYqeWXKLnztChN9mbhKIIJKlrWFrkb3101nsG7YtUppSqtXpLTRUtRqODUA63bKs8TQqsuqsRpbQkaSeW+p1+szljjPZrHLKD6NTH9p6xGSlakm3hJZ2HLPUJuxkOyfD0xmMpYevVdVrMUDg3IqMP4eh5E2HxEzqlObXYLg1XFY2ilEgOlRKpJNgEpurMfM+Uago6D2OW2b/bz2W1uHUlro5xFIf3pC5TTP3WK818+XOF9l3tFbAuMNiWLYVzZWN2NInYj+W/KfRNRVcMrAMpurA6gjYgifO3tN9n44fW76kR9mqF2RCfFTca92Oq9D0Fj1gmDR0bj/tLpU8SMPh1FazUlqVN0vUYDIp5kA3nhfa92UpYOvTqYZe7WqGbIugV1I1p29zcGwnluzFRxiMPQYgq2IGJ0AuWyWFz6K1hynsfaBxypiFSi9JytF3ZMQQ2WorXUeLYk+XSUiJaMDs32hqCoGVsuJvyIVcT1090VrbqdH9bTsvZPtYmKWwNqg95DcXtuVB105jcHefPOLwt9RvvYabbEdDNHh3GqzkFHK4oWyMNBiMugVxyrDa/3hodryn1sW9H02KgIuPiJVTHUmOVaik9AZzTsr7RlqgLiP4dUaNfw3I0Oh2N76Te4zxTD1QHp4imlUAaGxV7bBgNR6iKgs9iZGeNx3bJaZwwplHas6pUpAklLmzMoAzWvqL6Wveew7wdRAAgMcGD7wb3HzEVKqrAMrBgRcFSCCOoIhQWEJikTHhQ7PnXE+1DiD65kU5WS6qV0Ygn72+m/rMT/vDW3y0ydvd/1lRcC/4G+UIMC/4W+UfYixQ7XYmkWyELnUowC6Mh3B8piYWuFa/53NgZqPw1mGqGZeMwTU7X585MrKjT6NGnQJ5/HrBVqSjTc/QSxgKt6fw+sA6n09ZXwy+lWppJ0ReRqlRzvJ0TpvJ+lvQVxC9nONvgsVTxKAFqbXsbgMLEMptyIJkF2j4PChtbXsbD5RtWTGVHQaftmxgvlo0gCSfdJ1Pq0852t7X1+ItTbEC3dhgqoAF8W5IvqZnHDRfZpXAHNsqriMrBwGDAWBuNBbKefS8dcfWsEzErYkLcldwTYchoPkJbxXCWBAzIc3JWuRe1gehlheEMlTu84u2mbN4CCNNdouIcjM+1VNvD9TaAemWvcjXU6dJs1OFkVBTzISbeIMMovrcn01jUuFFnNPMoIvqW8JttY/GVQuRQxfEKtQqz5WZVy5zfM4Gxc/ePnCYLjVaiQUWlp1UH84qmFIJFr2JGmuxtJ1OFuEV9CG0sNWH/ABDltFQ7LdTtXWauuJsgqrbK6rl2Gm225+c2KXtQxqkkd3c2uSoJNtrm2v8ArPNVeE1FVWIBzXNlNyo6MOUT8JqB8hFrmwb7uuxuOUQz1X/ipjOaUT6pHpe1PFqAop0Qo2CqVA9ADaeUpcLZnKAqLX8ROVTbSwJ3udpDC8PNQMQyLl5M2UnQnw9doAexT2q4kHVF+ZH6GKeDKRQoCh9qf8R+cb7Q34j8zIZYVcMSLi/0/eZ9mvQwxD/iPzjtiXIsWJHSQycoR0Xl8z+0A6J4PEEeEddIcUydyPj/AKzPOmo/rWblrgEc9/3lRM8nXZmYlZHCmWMSOm35+crYfeFdjTtFvNLOG4itMZSl9Sb36/CU6pleo2sd0SlZtnja/wC7B+MG3HelNfr+8xhJZCdgYuTHwRq/2234F+ssvxkkJaklzcczcg6AAeswmFuVoam/g0vdWDA9L6afECHJj4o114jVBINPLbcZCCL+sarjqq3zJa24IItpz+f1mZ/aNYhhnazHMw3uRax+g+UatjqrZrk+MgvyzEbXg5jWJvSNihj2K/3RbNorAvv0W28lQYNuCDr15GxmHTx1RctmsUJKmwupN72MmvEq2liLjNsF++SW5a6knXrDkHr7o0uIfwyrKtwbg76cxqPjLP2S658htzNja/S8yqWJrlSmewOrdToRr8zGqVa5Ur3l1a5I2uSbk+t5PtV7N14eVq+LLzokESnUfKZeV/5j8zJh0tbxX5kn9BKUr0YPG47Rcq4hBtGlJ0SKFsKQBzbYwpcsvmDa43PrHQ3vy+XwgwWtvJKEwY76fIRu6HNh+cgAOZ+hMmGX+Y/IQAHUUDnea2COZB6WmW7DkPreWcDWIUjzjWyZq0Grj+ukqFbN66y07iQqJf4SmRF0DqtBOhvJVdxHYyWWuhKxGxtGLN1J9YrxEwAmzbXHytC4ZC5KDS4+gMApJ085o4UWZzz0EjJKo2dXiYllzKMtBauWimg1/M/1rKVLEZzZhbzH7SOPqZm8hpDcKoXJY6DYefWYcVGHKWz0/dLL5SxYlUV1QHGUrsoXmNZYFJUHX9YVQrORe9h+uv6QWMXLl0uLyeTlUWayxRxKeaKTf8FStij93T8zILXYggk9Zo4aoDysAJVxt8xAOlvzmkWuXGjj8jHNYvb7Lv8AHSKudrWuYO3mPzksvUj84jl8z8AJvR5jk3sY201ikmdbCy9dyYoAEw5+sFmOo2vII5G0jEAorxCNAB5Ok1vjB3jExgaKAEWPwgtVNryIJsDCZs2hlGVUQqC9jJ02B0P5RiCNDBBrGIpFt6F9hBU6RJ2t69Yai+nKIKNfL4xFUPSpEb6SVKplYje+sH3lrDe/ODc/tJklJUa4crxTU18LVWiHN72ir4sKuWn035DrbzlKmTtfpIKh/oSFj1bOqXm1yeOPFy2yWHrlTfeav2ymRqbeRmWievykKqHe30jljUnZPj+bkwpxXafxm/hyri66zFxdX+I9uekhTxbouUaa3/0lcm8jHj4ybNvM85Z8UYpU/v4HJjXjAxGb2ebRJjoPjGg2MUQUPFeNeK8BijxrxXMAFFGvEIgLlJtJFxYyNJraR8/KWRQbvLjWQrU9LjWDIttJLUgJKgQcyRrHzkjrC0qiBQG7y/8AKVt9REWiv3phu4qEAhWsdjY6x+/S41qWuea7W0tpvCjF07WLV7WItddjy2iACtGpr4WuLXsDcdPSW8OHUENSdiTcG7AgDQj6Qa4ymCSGr3O5zJc225QIxzeK71LEHLqPhm/0gHZeSrb/ANux+L+enp+0qVcarKQEsSLXDN87X1jrjFBJzVtf5l6WPL0+EgtakNu9tudU/aMKAJTZzYAsdfMyX2Op+Bumxj1qwuMhcb3uRfXe1pa+3L+Kv/mX9ohlQYGodkf/ACny/cfOCekwAYggHYkaH0l9eILzevvp41289N5WxdZSAFL2GwYggdbWgCKsUaKIZovw8fdYeht+kD9gb+X5z0XfM65bMV8qK/mq3+sHRVBe+b/JAukYqcNY/eX6mHTgx5t8lJ/WbVOmq++jgHQN3ZH5jWKpW6IxA/k5fKAcUZQ4JcXDOfPJp8Y9Hs1VIzahQCSxR8th/Na026GPdaeUDQsPezbA3sRt1+U1+0vFTT4eKfeKWqWXKoIyo2pHS1haTy7o09S4uRzpgJFmtJeca1zNDlGDR7QlHCOyu6i6plzeQY2B9L6fEQRQiA6HtC0KgDAsoYA6qdj5GQUaXO006HDshpu5VrqGyHMLXF1D28rHSJ9BBWxqlKne/dgDp0kO6p/gEtvXuxOSnz2B09LmRzjook2a0UqmGU6ZbeYlVsE3Ii3nNPKDzEQp+amFg4oyDhm6SJoN+EzZ7vTlFl0hYcTE7puhkjQNrkTWynrIMtxCw4GPFD4igRtqICMgUUUUAPYjilPLl7u/npf4nNrJUeJoNEpjQE6mw09GN5gUl6IDYX66c4Q1QRbu0HmBb52k0bRkjaqcQNg2RNeV7/8A6lZ+JsTYU7ctNvzlOhisp8Kpp5X+d4Sti2JNmBv0uo9LExdlycWui7TrVSqm1ULc2IVbDS/xke1PEKr06NJ2OUXYKURLWFr+Ek8+cJw/GVgVspZRe6i5A/F5XIgO1C02NNqdNFJvmFMnnrY32tBPsc0nDowbSDG0KjtTN1zA/pNDGVKFUBrMjW8WqkE/PSa2jj4SvRf7FY6lTNVayM61aToQGC6EAc+fMSzxehgcPhmWjmq1qllDVAt0FwTlKsQNNNtes8zSqANZVzDoRIZGJNk1v029BJNO2tBKGuVN77+XWekxmKpFiVplRmFhvoL6e9PP4cZR/d3PVh+kg/8Aw/pJl2aYpetaLFSrqbKd/SL7UR/s/qZWAH4fzkgo/D+cbEpMO+MI+7YaaSJxjbhfpf6wTqL+79TG7rqD84gbYU4pre79JFsUdNIPuxbn85KgQpuRm8iTaMS32zRxNEoFa3eBgT4Lm1t7j4wDV2/3TiwufCdAOZ02km4lUzZkY07AqMhKgA7wVbH12BVq1QqbjKWOWxFiLbaiKK67NM848n69DNVfYUm1/lOv0lDEIdypW/kRNAcTxGh7+p4QAviJsFJIA8gSfnK+Jq1Klu8dmttmN7eQlnPZQyiPLHcxQAuKbA205fA7iEojQ+keKJlw2DOsa0UUQvoSjUYHQkehMtKxYDNraKKSzWGi1kFthK7IOgiiiNSEY8oooxAGOsgf1iigTLQNTJkxoo2REiRI3iigIe2ka0UUaJY4EYrHigHwjlg2MaKNEsiGMUUUYj//2Q==" alt=""></div>
+                            <div class="details tr t-s">
+                                <div class="songName tr">Been like this</div>
+                            <div class="date tr">Sep 21, 2021</div>
+                        </div>
+                    </div>
+                    <div class="songs tr">
+                        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEljMO6CdpKCIsZImB0hQ-rE9SjygZSq0ooQ&s" alt=""></div>
+                        <div class="details tr t-s">
+                            <div class="songName tr">Extremes</div>
+                            <div class="date tr">Nov 19, 2018</div>
+                        </div>
+                    </div>
+                    <div class="songs tr">
+                        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIvZiHUmlUxK5mE8dwDa9PVBwxeM0tIXVZmQ&s" alt=""></div>
+                        <div class="details tr t-s">
+                                <div class="songName tr">Laxed</div>
+                            <div class="date tr">Aug 11, 2014</div>
+                        </div>
+                    </div>
+                    <div class="songs tr">
+                        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwAFn9VOIh1sHY32b4wxQ3dv4mbnq0lNbACg&s" alt=""></div>
+                        <div class="details tr t-s">
+                            <div class="songName tr">How you like that</div>
+                            <div class="date tr">Aug 27, 2019</div>
+                        </div>
+                    </div>
+                    <div class="songs tr">
+                        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIvZiHUmlUxK5mE8dwDa9PVBwxeM0tIXVZmQ&s" alt=""></div>
+                        <div class="details tr t-s">
+                            <div class="songName tr">Let me down slowly</div>
+                            <div class="date tr">Dec 17, 2016</div>
+                        </div>
+                    </div>
+                    <div class="songs tr">
+                        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                        <div class="details tr t-s">
+                            <div class="songName tr">Headlights</div>
+                            <div class="date tr">Jun 06, 2017</div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        
+            <!-- Latest Songs -->
+
+            <!-- Using the same classes of Latest English songs -->
+            <div class="latestEnglish tr">
+                <div class="playlistHeader tr f al-fe">Latest English Songs</div>
+                <div class="content tr f fw-w j-sb al-c">
+                    <div class="songs tr">
+                        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwAFn9VOIh1sHY32b4wxQ3dv4mbnq0lNbACg&s" alt=""></div>
+                    <div class="details tr t-s">
+                            <div class="songName tr">Been like this</div>
+                            <div class="date tr">Sep 21, 2021</div>
+                        </div>
+                    </div>
+                    <div class="songs tr">
+                    <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkC3YKUCYIpe0ijaZ9YVak7lGuO-St252h1Q&s" alt=""></div>
+                    <div class="details tr t-s">
+                            <div class="songName tr">Extremes</div>
+                            <div class="date tr">Nov 19, 2018</div>
+                        </div>
+                    </div>
+                    <div class="songs tr">
+                        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                        <div class="details tr t-s">
+                            <div class="songName tr">Laxed</div>
+                                <div class="date tr">Aug 11, 2014</div>
+                            </div>
+                    </div>
+                    <div class="songs tr">
+                        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwAFn9VOIh1sHY32b4wxQ3dv4mbnq0lNbACg&s" alt=""></div>
+                        <div class="details tr t-s">
+                            <div class="songName tr">How you like that</div>
+                            <div class="date tr">Aug 27, 2019</div>
+                        </div>
+                    </div>
+                    <div class="songs tr">
+                        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkC3YKUCYIpe0ijaZ9YVak7lGuO-St252h1Q&s" alt=""></div>
+                        <div class="details tr t-s">
+                            <div class="songName tr">Let me down slowly</div>
+                                <div class="date tr">Dec 17, 2016</div>
+                        </div>
+                    </div>
+                    <div class="songs tr">
+                        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                        <div class="details tr t-s">
+                            <div class="songName tr">Headlights</div>
+                            <div class="date tr">Jun 06, 2017</div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+
+
+            <!-- *******   Aside   ******* -->
+            <aside class="tr">
+                <div class="asideHeader tr f j-sb al-c">
+                    <div class="header tr">Queue</div>
+                    <div class="list tr f j-sb">
+                        <div class="tr">Queue</div>
+                        <i class="fa-solid fa-caret-down tr"></i>
+                        <ul class="tr f fd-c j-c al-s">
+                            <li class="tr"> Playlists</li>
+                            <hr >
+                            <li class="tr">Favourite Songs</li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="songs tr f fd-c j-s al-c">
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">01</div>
+                            <div class="img tr "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXLDfmI0F7a7J6_AfGBC_wWYe4lP4VPhGKFw&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">How you like that</div>
+                                <div class="lower tr">Black Pink</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">02</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHyb_e3H4h0J05geRtIkA6cUi7ekTqDpYi3Q&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Been like this</div>
+                                <div class="lower tr">Planet Her</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">03</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXLDfmI0F7a7J6_AfGBC_wWYe4lP4VPhGKFw&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Extremes</div>
+                                <div class="lower tr">Extremes</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">04</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Laxed</div>
+                                <div class="lower tr">Siren Beat</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">05</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlP7zzkqVyYsJ-GLk4Bwa0pHin7XtRReOyQg&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Headlights</div>
+                                <div class="lower tr">Kiddo</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">06</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Let me down</div>
+                                <div class="lower tr">Alan Slowly</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">07</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlP7zzkqVyYsJ-GLk4Bwa0pHin7XtRReOyQg&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">How you like that</div>
+                                <div class="lower tr">Black Pink</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">08</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Been like this</div>
+                                <div class="lower tr">Planet Her</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">09</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlP7zzkqVyYsJ-GLk4Bwa0pHin7XtRReOyQg&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Extremes</div>
+                                <div class="lower tr">Extremes</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">10</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHyb_e3H4h0J05geRtIkA6cUi7ekTqDpYi3Q&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Laxed</div>
+                                <div class="lower tr">Siren Beat</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">11</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Headlights</div>
+                                <div class="lower tr">Kiddo</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">12</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Let me down</div>
+                                <div class="lower tr">Alan Slowly</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">13</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHyb_e3H4h0J05geRtIkA6cUi7ekTqDpYi3Q&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">How you like that</div>
+                                <div class="lower tr">Black Pink</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">14</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Been like this</div>
+                                <div class="lower tr">Planet Her</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">15</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Extremes</div>
+                                <div class="lower tr">Extremes</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">16</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHyb_e3H4h0J05geRtIkA6cUi7ekTqDpYi3Q&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Laxed</div>
+                                <div class="lower tr">Siren Beat</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">17</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Headlights</div>
+                                <div class="lower tr">Kiddo</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">18</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Let me down</div>
+                                <div class="lower tr">Alan Slowly</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">19</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHyb_e3H4h0J05geRtIkA6cUi7ekTqDpYi3Q&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">How you like that</div>
+                                <div class="lower tr">Black Pink</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">20</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Been like this</div>
+                                <div class="lower tr">Planet Her</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">21</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Been like this</div>
+                                <div class="lower tr">Planet Her</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div> <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">22</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Been like this</div>
+                                <div class="lower tr">Planet Her</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div> <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">23</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Been like this</div>
+                                <div class="lower tr">Planet Her</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div> <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">24</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Been like this</div>
+                                <div class="lower tr">Planet Her</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div> <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">25</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Been like this</div>
+                                <div class="lower tr">Planet Her</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div> <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">26</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Been like this</div>
+                                <div class="lower tr">Planet Her</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div> <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">27</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Been like this</div>
+                                <div class="lower tr">Planet Her</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div> <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">28</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Been like this</div>
+                                <div class="lower tr">Planet Her</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div> <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">29</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Been like this</div>
+                                <div class="lower tr">Planet Her</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div> <div class="song tr f j-sb">
+                        <div class="left tr f al-c j-sb">
+                            <div class="songNumber tr">30</div>
+                            <div class="img tr"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkScRw37bwt4I4eNFvS-6A8_bSAWJxZQAMng&s" alt=""></div>
+                            <div class="details tr f fd-c al-c">
+                                <div class="upper tr">Been like this</div>
+                                <div class="lower tr">Planet Her</div>
+                            </div>
+                        </div>
+                        <div class="right tr f j-s al-c">
+                            <i class="fa-regular fa-heart tr"></i>
+                        </div>
+                    </div>
+                    
+      
+                </div>
+            </aside>
+
+
+        </div>
+
+        <!-- *******   Footer   ******* -->
+        <footer id="footer" class=" f j-se al-c">
+            
+                <div class="left tr f al-c">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIGdZkbxkHjp98WZ83nb0faMiyJsL6-QN4Fg&s" alt="Err">
+                    <div class="songName tr"><span class="upper tr"><marquee scrollamount="4" direction="left"class="tr">How you like that</marquee></span>  <br> <span class="lower tr">Black Pink</span></div>
+                    <div class="icon tr"><i class="fa-regular fa-heart tr"></i><i class="fa-solid fa-circle-exclamation tr"></i></div>
+                </div>
+                <div class="audio">
+                    <audio style="background-color:transparent;"
+                    controls
+                    src="./css/ss.mp3" class="tr">
+                </audio>
+                </div>
+                <div class="right tr f j-c al-c"><i class="fa-solid fa-list-ul tr"></i><i class="fa-solid fa-radio tr"></i><i class="fa-solid fa-volume-high tr"></i>
+                <input type="range">
+                <i class="fa-solid fa-up-right-and-down-left-from-center tr"></i></i></div>
+        </footer>
+    </div>
+    
+</body>
+
+</html>

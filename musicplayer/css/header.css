@@ -1,0 +1,336 @@
+/* **********  Font Family  ******** */
+@font-face {
+    font-family: gothamXLight;
+    src: url('gotham/Gotham-XLight.otf');
+}
+
+@font-face {
+    font-family: gothamBold;
+    src: url('gotham/Gotham-Bold.otf');
+}
+
+
+/* **********  Header  ******** */
+
+header{
+    width:100%;
+    height:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:var(--font-pure-color);
+    position: relative;
+    box-shadow: 0 30px 40px 10px var(--background-color);
+    z-index: 3;
+}
+header .header-left{
+    width:320px;
+    height:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+header .header-left .left{
+    width:150px;
+    height:100%;
+}
+header .header-left .left .logo{
+    padding:0 1rem 0 0.5rem;
+    color:var(--list-color);
+}
+header .header-left .left .logo i{
+    font-size:60px;
+}
+header .header-left .left .text{
+    width:85px;
+    height:60px;
+    font-size:1.5rem;
+    flex-direction:column;
+}
+header .header-left .left .text .lower{
+    font-family: gothamBold;
+    font-weight:300;
+}
+header .header-left .right p{
+    font-size:.9rem;
+    cursor:pointer;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+header .header-right{
+    width:550px;
+    height:100%;
+}
+header .header-right .searchBar{
+    position:relative;
+}
+header .header-right .searchBar input[type="text"]{
+    color:var(--font-pure-color);
+    width:300px;
+    padding:10px;
+    background-color:var(--background-soft-color);
+    border-radius:20px;
+    outline:none;
+    border:none;
+    text-align:center;
+}
+header .header-right .searchBar input::placeholder{
+    position:absolute;
+    left:15%;
+}
+header .header-right .searchBar i.search{
+    color:var(--font-pure-soft);
+    top:25%;
+    left:5%;
+    position:absolute;
+}
+header .header-right .searchBar i.mic{
+    color:var(--font-pure-soft);
+    top:25%;
+    right:5%;
+    position:absolute;
+}
+header .header-right .bell{
+    position:relative;
+    font-size:30px;
+}
+header .header-right .bell .notification{
+    width:7px;
+    height:7px;
+    background-color:red;
+    border-radius:50%;
+    position:absolute;
+    top:6px;
+    right:2px;
+}
+header .header-right .myimg img{
+    width:50px;height:50px;
+    border-radius:50%;
+    margin:10px;
+}
+header .header-right .hamburgerIcon{
+    display:none;
+}
+
+
+
+/* Media Max-Width 1200px */
+@media screen and (max-width:1200px){
+
+    header .header-left{
+        width:270px;
+    }
+    header .header-right .searchBar input[type="text"]{
+        width:250px;
+        padding:8px;
+    }
+
+    header .header-left .right p{
+        font-size:.8rem;
+        cursor:pointer;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+    }
+
+    header .header-left .left .logo i{
+        font-size:45px;
+    }
+    header .header-left .left .text{
+        width:85px;
+        height:60px;
+        font-size:1.3rem;
+    }
+    header .header-right{
+        width:400px;
+        height:100%;
+    }
+    header .header-right .bell{
+        position:relative;
+        font-size:20px;
+    }
+    header .header-right .bell .notification{
+        width:7px;
+        height:7px;
+        background-color:red;
+        border-radius:50%;
+        position:absolute;
+        top:1px;
+        right:0px;
+    }
+    header .header-right .myimg img{
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        margin:10px;
+    }
+    header .header-right .hamburgerIcon{
+        display:none;
+    }
+    
+}
+
+
+
+/* Media Max-Width 890px */
+@media screen and (max-width:890px){
+
+    header .header-left{
+        width:230px;
+    }
+    header .header-left .left{
+        width:130px;
+    }
+    header .header-right .searchBar input[type="text"]{
+        width:150px;
+        padding:8px;
+    }
+    header .header-right .searchBar input::placeholder{
+        position:absolute;
+        left:20%;
+    }
+    header .header-left .left .logo{
+        padding:0 .7rem 0 0.5rem;
+    }
+    header .header-right .searchBar i.search{
+        color:var(--font-pure-soft);
+        top:27%;
+        left:7%;
+        position:absolute;
+        font-size:13px;
+    }
+    header .header-right .searchBar i.mic{
+        color:var(--font-pure-soft);
+        top:27%;
+        right:7%;
+        position:absolute;
+        font-size:13px;
+    }
+    header .header-left .right p{
+        font-size:.75rem;
+        cursor:pointer;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+    }
+
+    header .header-left .left .logo i{
+        font-size:35px;
+    }
+    header .header-left .left .text{
+        width:85px;
+        height:60px;
+        font-size:1.1rem;
+    }
+    header .header-right{
+        width:270px;
+        height:100%;
+    }
+    header .header-right .bell{
+        position:relative;
+        font-size:17px;
+    }
+    header .header-right .bell .notification{
+        width:7px;
+        height:7px;
+        background-color:red;
+        border-radius:50%;
+        position:absolute;
+        top:1px;
+        right:0px;
+    }
+    header .header-right .myimg img{
+        width:35px;
+        height:35px;
+        border-radius:50%;
+        margin:10px;
+    }
+    header .header-right .hamburgerIcon{
+        display:none;
+    }
+    
+}
+
+
+
+/* Media Max-Width 600px */
+@media screen and (max-width:600px){
+
+    header .header-left .left .logo{
+        padding:0 1rem 0 0.5rem;
+        color:var(--list-color);
+    }
+    header .header-left .left .logo i{
+        font-size:50px;
+    }
+    header .header-left .right p{
+        
+        display:none;
+    }
+    header .header-right{
+        width:170px;
+        height:100%;
+    }
+    header .header-right .searchBar{
+        display:none;
+    }   
+    header .header-right .bell{
+        position:relative;
+        font-size:25px;
+    }
+    header .header-right .bell .notification{
+        width:7px;
+        height:7px;
+        background-color:red;
+        border-radius:50%;
+        position:absolute;
+        top:4px;
+        right:1px;
+    }
+    header .header-right .myimg img{
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        margin:10px;
+    }
+    header .header-right .hamburgerIcon{
+        display:block;
+        color:white;
+        font-size:25px;
+        margin-right:1rem;
+    }
+}
+
+
+/* Media Max-Width 480px */
+@media screen and (max-width:480px){
+
+    header .header-left .left .logo{
+        padding:0 1rem 0 0.5rem;
+        color:var(--list-color);
+    }
+    header .header-left .left .logo i{
+        font-size:40px;
+    }
+    header .header-right{
+        width:150px;
+    }
+    header .header-right .bell{
+        position:relative;
+        font-size:20px;
+    }
+    header .header-right .bell .notification{
+        top:4px;
+        right:1px;
+    }
+    header .header-right .myimg img{
+        width:30px;
+        height:30px;
+        border-radius:50%;
+        margin:10px;
+    }
+    header .header-right .hamburgerIcon{
+        display:block;
+        color:white;
+        font-size:22px;
+        margin-right:1rem;
+    }
+}

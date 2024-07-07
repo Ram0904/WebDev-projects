@@ -1,0 +1,164 @@
+@font-face {
+    font-family: gothamXLight;
+    src: url('.gotham/Gotham-XLight.otf');
+}
+
+@font-face {
+    font-family: gothamBold;
+    src: url('.gotham/Gotham-Bold.otf');
+}
+/* **********  Aside  ******** */
+
+aside{
+    width:350px;
+    height:85vh;
+    color:var(--font-pure-color);
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+aside .asideHeader{
+    width:90%;
+    height:60px;
+    margin-top:4.5rem;
+}
+aside .asideHeader .header{
+    font-size:1.5rem;
+    font-family:gothamBold;
+}
+aside .asideHeader .list{
+    width:100px;
+    color:var(--list-color);
+    font-family:gothamBold;
+    position:relative;
+}
+aside .asideHeader .list ul{
+    position:absolute;
+    top:18px;
+    right:10px;
+    background:white;
+    width:150px;
+    height:70px;
+    display:none;
+}
+aside .asideHeader .list:hover ul{
+    display:block;
+    
+}
+aside .asideHeader .list ul li{
+    font-size:.8rem;
+    list-style: none;
+    color:var(--font-pure-hard);
+    padding:0.5rem 0.5rem 0.5rem 1rem;
+    cursor:pointer;
+}
+aside .asideHeader .list ul hr{
+    width:80%;
+    margin:auto;
+    background:var(--font-pure-soft);
+}
+
+/* Aside Songs */
+aside .songs{
+    width:90%;
+    height:auto;
+    margin-top:2rem;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+aside .songs::-webkit-scrollbar {
+    display: none;
+}
+aside .songs .song{
+    width:95%;
+    height:70px;
+    margin:0.5rem;
+    color:var(--font-pure-soft);
+    transition: all .3s ease-in-out;
+}
+aside .songs .song:hover{
+    background:var(--background-tiles);
+    cursor:pointer;
+}
+aside .songs .song .left{
+    width:210px;
+    height:100%;
+    font-family:gothamBold;
+}
+aside .songs .song .left .songNumber{
+    font-size:0.8rem;
+}
+aside .songs .song .left .img{
+    display:flex;
+    align-items: center;
+}
+aside .songs .song .left .img img{
+    width:50px;
+    height:50px;
+    border-radius:5px;
+}
+aside .songs .song .left .details{
+    width:110px;
+    font-size:0.75rem;
+}
+aside .songs .song .left .details .upper{
+    color:var(--font-pure-color);
+    width:100%;
+    padding:0.2rem;
+}
+aside .songs .song .left .details .lower{
+    width:100%;
+    font-family:gothamXLight;
+    font-size:0.7rem;
+}
+aside .songs .song .right{
+    width:30px;
+    height:100%;
+}
+
+
+
+/* Media Max-Width 1200px */
+
+@media screen and (max-width:1200px){
+
+    aside{
+        width:300px;
+        height:85vh;
+    }
+
+}
+
+
+/* Media Max-Width 890px */
+@media screen and (max-width:890px){
+
+    aside{
+        width:95%;
+        /* width:550px; */
+        height:600px;
+        color:var(--font-pure-color);
+        /* border:1px solid yellow; */
+        margin-bottom: 150px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
+/* Media Max-Width 600px */
+@media screen and (max-width:600px){
+
+    aside{
+        width:95%;
+        height:600px;
+        color:var(--font-pure-color);
+        margin-bottom: 150px;
+    }
+    
+}       
